@@ -6,7 +6,7 @@ I edited this webpage used to create a working password generator. I added code 
 
 ![password-generator-screenshot](https://user-images.githubusercontent.com/126113017/233486485-6697dc51-b834-4aaf-a5a8-dc207021b13f.png)
 
-https://kelso1020.github.io/password-generator
+https://kelso1020.github.io/password-generator/
 
 ## Usage
 
