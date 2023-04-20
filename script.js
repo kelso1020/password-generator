@@ -18,7 +18,7 @@ function generatePassword () {
     alert("Password should be between 8 and 128 characters. Try again.");
     return;
   }
-}
+
 
 // prompts user to select character styles for password
 var lowercase = confirm("Do you want to include lowercase letters in your password?");
@@ -26,5 +26,11 @@ var uppercase = confirm("Do you want to include uppercase letters in your passwo
 var numbers = confirm("Do you want to include numbers in your password?");
 var special = confirm("Do you want to include special characters in your password?");
 
+// ensures user chooses at least one character style
+if (!lowercase && !uppercase && !numbers && !special) {
+  alert("You must choose at least one character style.");
+  return;
+}
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
