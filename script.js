@@ -57,6 +57,18 @@ if (addNumbers) {
 if (addSpecial) {
   userChoice += special;
 }
+
+// new variable for printed password
+var finalPassword = "";
+
+// loop ensuring random characters from userChoice are picked and used in finalPassword
+for (var i = 0; i < userInput; i++) {
+  var index = Math.floor(Math.random() * userChoice.length);
+  finalPassword += userChoice[index];
+}
+
+return finalPassword;
+
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
