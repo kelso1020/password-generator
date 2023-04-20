@@ -20,5 +20,11 @@ function generatePassword () {
   }
 }
 
+// prompts user to select character styles for password
+var lowercase = confirm("Do you want to include lowercase letters in your password?");
+var uppercase = confirm("Do you want to include uppercase letters in your password?");
+var numbers = confirm("Do you want to include numbers in your password?");
+var special = confirm("Do you want to include special characters in your password?");
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
